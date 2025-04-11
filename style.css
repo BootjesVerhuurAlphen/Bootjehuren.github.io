@@ -92,6 +92,8 @@ footer {
     flex: 1; /* Elke agenda krijgt evenveel ruimte */
     min-width: 200px; /* Voorkomt dat de agenda's te klein worden op kleinere schermen */
     max-width: 600px; /* Optioneel, zodat de agenda's niet breder worden dan 600px */
+    aspect-ratio: 3 / 4;
+    padding-bottom: 130%;
 }
 
 /* Je kunt ook extra styling toevoegen, bijvoorbeeld voor het vergroten van de lettergrootte, marges, enz. */
