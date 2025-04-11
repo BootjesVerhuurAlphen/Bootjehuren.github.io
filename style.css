@@ -137,7 +137,7 @@ footer {
   /* Grote schermen */
   @media (min-width: 1024px) {
     .responsive-calendar {
-      aspect-ratio: 16 / 9;
+      aspect-ratio: 10 / 9;
       padding-bottom: 56.25%;
     }
   }
