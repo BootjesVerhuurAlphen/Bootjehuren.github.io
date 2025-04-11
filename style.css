@@ -100,7 +100,7 @@ footer {
     position: relative;
     width: 100%;
     aspect-ratio: 4 / 3; /* Geeft een standaard hoogteverhouding (kan je aanpassen) */
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
   
@@ -137,8 +137,8 @@ footer {
   /* Grote schermen */
   @media (min-width: 1024px) {
     .responsive-calendar {
-      aspect-ratio: 16 / 9;
-      padding-bottom: 56.25%;
+      aspect-ratio: 16 / 6;
+      padding-bottom: 37.5%;
       max-width: 800px;
       margin: 0 auto;
     }
