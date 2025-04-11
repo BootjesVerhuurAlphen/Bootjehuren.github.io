@@ -99,7 +99,7 @@ footer {
 .responsive-calendar {
     position: relative;
     width: 100%;
-    padding-bottom: 75%; /* standaard hoogteverhouding */
+    padding-bottom: 90%; /* standaard hoogteverhouding */
     height: 0;
     overflow: hidden;
   }
@@ -116,13 +116,13 @@ footer {
   /* Grotere schermen: meer ruimte voor hoogte */
   @media (min-width: 768px) {
     .responsive-calendar {
-      padding-bottom: 66.66%; /* iets minder hoogte nodig op brede schermen */
+      padding-bottom: 70%; /* iets minder hoogte nodig op brede schermen */
     }
   }
   
   @media (min-width: 1024px) {
     .responsive-calendar {
-      max-width: 700px;
+      max-width: 600px;
       margin: 0 auto; /* center op grotere schermen */
       padding-bottom: 60%;
     }
