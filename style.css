@@ -144,9 +144,8 @@ footer {
   /* Iedere agenda-sectie krijgt een flex-gedeelte */
   .boot-agenda1, .boot-agenda2, .boot-agenda3 {
     flex: 1;
-    min-width: 280px;
-    max-width: 400px;
-    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 800px;
   }
   
   /* Wrapper die zorgt voor langwerpige hoogte */
@@ -156,8 +155,6 @@ footer {
     aspect-ratio: 3 / 4; /* Langwerpige vorm, hoger dan breed */
     padding-bottom: 130%; /* Fallback voor oudere browsers */
     overflow: hidden;
-    border: 1px solid #ccc;
-    border-radius: 8px;
   }
   
   /* Iframe vult de wrapper volledig */
