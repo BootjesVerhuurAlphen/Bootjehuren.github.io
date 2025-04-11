@@ -99,9 +99,14 @@ footer {
 .responsive-calendar {
     position: relative;
     width: 100%;
-    padding-bottom: 90%; /* standaard hoogteverhouding */
-    height: 0;
+    aspect-ratio: 4 / 3; /* Geeft een standaard hoogteverhouding (kan je aanpassen) */
+    max-width: 600px;
+    margin: 0 auto;
     overflow: hidden;
+  
+    /* Fallback voor oudere browsers */
+    height: 0;
+    padding-bottom: 75%;
   }
   
   .responsive-calendar iframe {
@@ -113,21 +118,28 @@ footer {
     border: 0;
   }
   
-  /* Grotere schermen: meer ruimte voor hoogte */
-  @media (min-width: 768px) {
+  /* Kleine schermen (mobiel): hogere verhouding */
+  @media (max-width: 480px) {
     .responsive-calendar {
-      padding-bottom: 70%; /* iets minder hoogte nodig op brede schermen */
-      max-height: 600px;
-      max-width: 600px;
+      aspect-ratio: 3 / 4;
+      padding-bottom: 130%; /* fallback */
     }
   }
   
-  @media (min-width: 1024px) {
+  /* Tablets en hoger: iets minder hoogte */
+  @media (min-width: 768px) {
     .responsive-calendar {
-      max-width: 600px;
-      max-height: 600px;
-      margin: 0 auto; /* center op grotere schermen */
-      padding-bottom: 60%;
+      aspect-ratio: 4 / 3;
+      padding-bottom: 75%;
     }
   }
+  
+  /* Grote schermen */
+  @media (min-width: 1024px) {
+    .responsive-calendar {
+      aspect-ratio: 16 / 9;
+      padding-bottom: 56.25%;
+    }
+  }
+  
   
