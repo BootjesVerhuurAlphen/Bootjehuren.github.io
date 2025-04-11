@@ -171,7 +171,6 @@ footer {
   /* Alleen toepassen op de formulierpagina */
 .formulierpagina {
     display: flex;
-    align-items: center;
     justify-content: center;
     padding: 2rem;
     min-height: 100vh;
@@ -180,44 +179,14 @@ footer {
   
   /* Responsieve wrapper rond het Google Form */
   .formulierpagina .responsive-form {
-    position: relative;
     width: 100%;
-    max-width: 800px;
-    aspect-ratio: 4 / 5;
-    padding-bottom: 125%;
-    overflow: hidden;
+    max-width: 1000px;
   }
   
-  /* Formulier iframe vult het blok */
   .formulierpagina .responsive-form iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh; /* 100% van de viewporthoogte, of kies een vaste hoogte als gewenst */
+    min-height: 1000px; /* Zorgt dat het formulier nooit afgekapt wordt op kleinere schermen */
     border: 0;
   }
   
-  /* Kleine schermen */
-  @media (max-width: 480px) {
-    .formulierpagina .responsive-form {
-      aspect-ratio: 3 / 4;
-      padding-bottom: 133%;
-    }
-  }
-  
-  /* Tablets */
-  @media (min-width: 768px) {
-    .formulierpagina .responsive-form {
-      aspect-ratio: 4 / 5;
-      padding-bottom: 125%;
-    }
-  }
-  
-  /* Grote schermen */
-  @media (min-width: 1024px) {
-    .formulierpagina .responsive-form {
-      aspect-ratio: 5 / 4;
-      padding-bottom: 80%;
-    }
-  }
