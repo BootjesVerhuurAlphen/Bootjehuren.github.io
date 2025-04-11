@@ -79,23 +79,6 @@ footer {
     margin-top: 1rem;
 }
 
-/* CSS voor de container van de agenda's */
-.agenda-container {
-    display: flex;
-    justify-content: space-between; /* Zorgt ervoor dat de agenda's gelijkmatig worden verdeeld */
-    gap: 20px; /* Optioneel, voegt ruimte tussen de agenda's toe */
-    flex-wrap: wrap; /* Zorgt ervoor dat de agenda's naar de volgende regel gaan als er niet genoeg ruimte is */
-}
-
-/* CSS voor de individuele agenda-secties */
-.boot-agenda1, .boot-agenda2, .boot-agenda3 {
-    flex: 1; /* Elke agenda krijgt evenveel ruimte */
-    min-width: 200px; /* Voorkomt dat de agenda's te klein worden op kleinere schermen */
-    max-width: 600px; /* Optioneel, zodat de agenda's niet breder worden dan 600px */
-    aspect-ratio: 3 / 4;
-    padding-bottom: 130%;
-}
-
 /* Je kunt ook extra styling toevoegen, bijvoorbeeld voor het vergroten van de lettergrootte, marges, enz. */
 
 .responsive-calendar {
@@ -145,3 +128,45 @@ footer {
       margin: 0 auto;
     }
   }
+
+
+  /* Container die de agenda-secties naast elkaar zet en wrapt op kleine schermen */
+.agenda-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Iedere agenda-sectie krijgt een flex-gedeelte */
+  .boot-agenda1, .boot-agenda2, .boot-agenda3 {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+  
+  /* Wrapper die zorgt voor langwerpige hoogte */
+  .responsive-calendar2 {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 4; /* Langwerpige vorm, hoger dan breed */
+    padding-bottom: 130%; /* Fallback voor oudere browsers */
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  /* Iframe vult de wrapper volledig */
+  .responsive-calendar2 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
