@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+header {
+    background-color: #005f73;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #005f73;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    border-bottom: 0;
+}
+
+.boten-overzicht {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.boot {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+    max-width: 300px;
+    text-align: center;
+}
+
+.boot img {
+    border-radius: 8px;
+}
+
+.boot-detail {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.boot-detail img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #005f73;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+/* CSS voor de container van de agenda's */
+.agenda-container {
+    display: flex;
+    justify-content: space-between; /* Zorgt ervoor dat de agenda's gelijkmatig worden verdeeld */
+    gap: 20px; /* Optioneel, voegt ruimte tussen de agenda's toe */
+    flex-wrap: wrap; /* Zorgt ervoor dat de agenda's naar de volgende regel gaan als er niet genoeg ruimte is */
+}
+
+/* CSS voor de individuele agenda-secties */
+.boot-agenda1, .boot-agenda2, .boot-agenda3 {
+    flex: 1; /* Elke agenda krijgt evenveel ruimte */
+    min-width: 300px; /* Voorkomt dat de agenda's te klein worden op kleinere schermen */
+    max-width: 600px; /* Optioneel, zodat de agenda's niet breder worden dan 600px */
+}
+
+/* Je kunt ook extra styling toevoegen, bijvoorbeeld voor het vergroten van de lettergrootte, marges, enz. */
