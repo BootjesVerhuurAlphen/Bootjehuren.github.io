@@ -95,3 +95,21 @@ footer {
 }
 
 /* Je kunt ook extra styling toevoegen, bijvoorbeeld voor het vergroten van de lettergrootte, marges, enz. */
+
+.responsive-calendar {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%; /* Hoogteverhouding - pas aan indien nodig */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .responsive-calendar iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
