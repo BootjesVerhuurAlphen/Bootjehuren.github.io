@@ -117,12 +117,15 @@ footer {
   @media (min-width: 768px) {
     .responsive-calendar {
       padding-bottom: 70%; /* iets minder hoogte nodig op brede schermen */
+      max-height: 600px;
+      max-width: 600px;
     }
   }
   
   @media (min-width: 1024px) {
     .responsive-calendar {
       max-width: 600px;
+      max-height: 600px;
       margin: 0 auto; /* center op grotere schermen */
       padding-bottom: 60%;
     }
