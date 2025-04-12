@@ -38,6 +38,7 @@ footer {
     border-bottom: 0;
 }
 
+/* Pagina uiterlijk ^^ */
 
 .boten-overzicht {
     display: flex;
@@ -55,6 +56,8 @@ footer {
     max-width: 300px;
     text-align: center;
 }
+
+/* Pagina indeling boten overzicht ^^ */
 
 .boot img {
     border-radius: 8px;
@@ -75,6 +78,8 @@ footer {
     margin-bottom: 1rem;
 }
 
+/* overzicht indeling boten ^^ */
+
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -85,7 +90,7 @@ footer {
     margin-top: 1rem;
 }
 
-/* Je kunt ook extra styling toevoegen, bijvoorbeeld voor het vergroten van de lettergrootte, marges, enz. */
+/* knop voor reserveren van boot ^^ */
 
 .responsive-calendar {
     position: relative;
@@ -109,6 +114,8 @@ footer {
     border: 0;
   }
   
+/* manier van mee bewegen kalenders^^ */
+
   /* Kleine schermen (mobiel): hogere verhouding */
   @media (max-width: 480px) {
     .responsive-calendar {
@@ -135,6 +142,7 @@ footer {
     }
   }
 
+  /* kalender restricties mobiele en kleinere schermen^^ */
 
 /* Grid-layout voor beschikbaarheidspagina */
 .agenda-container {
@@ -153,6 +161,8 @@ footer {
     max-width: 700px;
   }
   
+/* beschikbaarheids indeling ^^ */
+
 /* Vierkante, schaalbare kalenders */
 .responsive-calendar2 {
     position: relative;
@@ -174,6 +184,8 @@ footer {
     border: 0;
   }
 
+/* meeschalen/indelen kalenders op beschikbaarheids^^ */
+
   /* Alleen toepassen op de formulierpagina */
 .formulierpagina {
     display: flex;
@@ -193,6 +205,8 @@ footer {
     min-height: 2000px; /* Zorgt dat het formulier nooit afgekapt wordt op kleinere schermen */
     border: 0;
   }
+
+  /* gebruik en functionaliteit formulier contact^^ */
   
   .side-image {
     position: fixed;
@@ -218,11 +232,15 @@ footer {
     right: 0;
   }
   
+/* toevoeging afbeeldingen zijkant scherm ^^ */
+
   @media (max-width: 1100px) {
     .side-image {
       display: none;
     }
   }
+
+/* restrictie zij afbeelding zichtbaarheid kleinere schermen^^ */
 
   .responsive-img-wrapper {
     aspect-ratio: 4 / 3;
@@ -240,3 +258,4 @@ footer {
     display: block;
   }
   
+  /* gedrag afbeelding pagina 1, meeschalen^^ */
