@@ -193,7 +193,7 @@ footer {
     top: 0;
     bottom: 0;
     width: 250px; /* Pas dit aan op basis van je ontwerp */
-    opacity: 0.2; /* Licht transparant */
+    opacity: 0.4; /* Licht transparant */
     z-index: 1;
     pointer-events: none; /* voorkomt dat ze aanklikbaar zijn */
     overflow: hidden;
@@ -212,7 +212,7 @@ footer {
     right: 0;
   }
   
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
     .side-image {
       display: none;
     }
