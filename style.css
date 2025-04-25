@@ -63,7 +63,8 @@ footer {
     border-radius: 8px;
     width: 100%;
     aspect-ratio: 4 / 3;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: bottom center;
     display: block;
     height: auto;
     border-radius: 8px;
