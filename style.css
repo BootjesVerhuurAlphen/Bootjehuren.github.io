@@ -61,6 +61,11 @@ footer {
 
 .boot img {
     border-radius: 8px;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    display: block;
+    height: auto;
 }
 
 .boot-detail {
