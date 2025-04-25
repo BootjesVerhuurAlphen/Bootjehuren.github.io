@@ -256,6 +256,7 @@ footer {
     min-width: 100px;
     margin: 0 auto; /* center de afbeelding */
     height: auto;
+    border-radius: 8px;
   }
   
   .responsive-img {
