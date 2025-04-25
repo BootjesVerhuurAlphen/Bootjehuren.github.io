@@ -66,6 +66,7 @@ footer {
     object-fit: contain;
     display: block;
     height: auto;
+    border-radius: 8px;
 }
 
 .boot-detail {
